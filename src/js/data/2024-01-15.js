@@ -6,9 +6,9 @@ dataSet[dataSetVersion].options = [
     name: "Series",
     key: "series",
     checked: false,
-    sub: [
+    sub: [/*
       { name: "Brutal Legends", key: "BL" },
-      { name: "Viva Fantasy", key: "VF" },
+      { name: "Viva Fantasy", key: "VF" },*/
     ]
   },/*
   {
@@ -412,7 +412,7 @@ dataSet[dataSetVersion].characterData = [
 },
 
 // VIVA FANTASY //
-{
+/* {
   name: "Ayon",
   img: "vf/ayon.png",
   opts: {
