@@ -36,18 +36,23 @@ body {
 
 .progresstext {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content:center;
   width: 100%;
-  margin: 4px 0px;
   text-align: center;
-  font-size: 0.7em;
+  font-size: 1.2em;
+  height: 40px;
 }
 
 .progressfill {
   height: 21px;
-  background-color: #C5EEFE;
+  background-color: #f8922c;
+  color: white;
   width: 0%;
   border-radius: 2px;
   transition: 0.2s;
+  height:40px;
 }
 
 .sorter {
@@ -234,6 +239,7 @@ input[type='checkbox'] {
   display: none;
   text-align: center;
   font-size: 0.75em;
+  font-size: 12px;
 }
 
 .results {
