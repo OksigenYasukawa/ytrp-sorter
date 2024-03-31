@@ -403,13 +403,6 @@ dataSet[dataSetVersion].characterData = [
       series: ["BL"]
     }
 },
-{
-    name: "Zanny",
-    img: "zanny.png",
-    opts: {
-      series: ["BL"]
-    }
-},
 
 // VIVA FANTASY //
 /* {
