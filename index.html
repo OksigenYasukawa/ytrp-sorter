@@ -23,77 +23,96 @@
   <script src="src/js/extra.js"></script>
 </head>
 
-<body>
-<div class="menu">
+<body id="body">
+<div class="menu" id="menu">
     <p><a href="index.html">Minecraft Roleplay Sorter</a></p>
 </div>
 
-<div class="popup" id="popup-1">
-    <div class="overlay"></div>
-    <div class="content">
-        <div class="close-btn" onclick="togglePopup()">&times;</div>
-        <br>
-        <p class="p1">About</h1>
-        <p class="p2">This website was developed by <span class="penting">Oksigen Yasukawa</span>
-        <br><br>Originally inspired by <a href="http://mainyan.sakura.ne.jp/thsort.html" target="_blank">this site</a>.
-        <br><br>  </p>  
-    </div>      
-</div>
+<button class="open-btn ujung" onclick="togglePopup3()"><i class="fi fi-ss-moon"></i></button>
 
-<div class="container">
+<div class="container" id="container">
 
-    <div class="wlcm">
+    <div class="wlcm" id="wlcm">
         <p class="p1">Welcome to MCRP Sorter!</p>    
         <p class="p2">A fanmade website to sort/rank your favorite MCRP Character</p>    
     </div>
 
-    <div class="isi">
+    <div class="isi" id="isi">
         
         <div class="progress">
             <span class="progressbattle"></span>
             <div class="progressbar">
-                <div class="progressfill"><span class="progresstext"></span></div>
+                <div class="progressfill"><span class="progresstext" id="progresstext"></span></div>
             </div>
         </div>
     
         <div class="sorter">
-            <img src="src/assets/MIW.png" class="left sort image cover">
+            <img src="src/assets/red.JPG" class="left sort image cover">
     
-            <div class="starting start button">Start Sorting!</div>
-            <div class="starting load button">Load <span></span></div>
+            <div class="starting start button" id="button"><div class="tulisan">Start Sorting!</div></div>
+            <div class="starting load button" id="button"><div class="tulisan">Load&nbsp;<span></span></div></div>
     
             <div class="loading button"><div></div><span>Loading...</span></div>
     
-            <div class="sorting tie button">Tie!</div>
-            <div class="sorting undo button">Undo</div>
-            <div class="sorting save button">Save Progress</div>
+            <div class="sorting tie button" id="button">Tie!</div>
+            <div class="sorting undo button" id="button">Undo</div>
+            <div class="sorting save button" id="button">Save Progress</div>
     
-            <div class="finished save button">Generate Result URL</div>
-            <div class="finished getimg button">Generate Image</div>
-            <div class="finished list button">Generate Text List</div>
+            <div class="finished save button" id="button">Generate Result URL</div>
+            <div class="finished getimg button" id="button">Generate Image</div>
+            <div class="finished list button" id="button">Generate Text List</div>
     
-            <img src="src/assets/MIW.png" class="right sort image cover">
+            <img src="src/assets/blue.JPG" class="right sort image cover">
     
             <div class="left sort text"><p></p></div>
             <div class="right sort text"><p></p></div>
         </div>
     
-        <div class="options"></div>
+        <div class="options" id="options"></div>
         <div class="image selector"> </div>
         <div class="time taken"></div>
-    </div>
 
-
-    
-    <div class="info">
-        <a class="clearsave">Clear Save Data</a>
+        <div class="info" id="info">
+            <a class="clearsave">Clear Save Data</a>
+        </div>
     </div>
 </div>
 
 <div class="results"></div>
     
-<div class="footer">
-    <a href="https://github.com/OksigenYasukawa/ytrp-sorter" target="_blank">Source Code  |</a> <a href="https://github.com/execfera/charasort/" target="_blank">Based on this project |</a> <button class="open-btn" onclick="togglePopup()">About</button>
+<div class="popup" id="popup-1">
+    <div class="overlay" onclick="togglePopup()"></div>
+    <div class="content">
+        <div class="close-btn" onclick="togglePopup()">&times;</div>
+        <br>
+        <p class="p1">About</h1>
+        <p class="p2 sian2">This website was developed by <span class="penting"><a href="https://kee.so/Oksigen">Oksigen Yasukawa</a></span>
+        <br><br>Originally inspired by <a href="http://mainyan.sakura.ne.jp/thsort.html" target="_blank">this site</a>.
+        <br><br>All images are used as media only and not to create new works of art. Image copyright remains with the original owner.</p>  
+    </div>      
+</div>
+
+<div class="popup" id="popup-2">
+    <div class="overlay" onclick="togglePopup2()"></div>
+    <div class="content">
+        <div class="close-btn" onclick="togglePopup2()">&times;</div>
+        <br>
+        <p class="p1">Version</h1>
+        <div class="versian">
+            <div class="sian1">
+                <p class="p2"><b>1.0</b><br>
+                    <b>1.1</b></p> 
+            </div>
+            <div class="sian2">
+                <p class="p2">Minecraft Roleplay Sorter released.<br>
+                    Added all YouTuber Brutal Legends characters.</p>
+            </div>                
+        </div>
+    </div>   
+</div>
+
+<div class="footer" id="footer">
+    <a href="https://github.com/OksigenYasukawa/ytrp-sorter" target="_blank">Source Code  |</a> <a href="https://github.com/execfera/charasort/" target="_blank">Based on This Project |</a><a onclick="togglePopup()"> About&nbsp;</a><a onclick="togglePopup2()">|&nbsp;Version</a>
     <br><br>
 
     <!--
