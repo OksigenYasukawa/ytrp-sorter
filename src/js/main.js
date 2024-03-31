@@ -269,6 +269,7 @@ function start() {
     document.querySelector('.loading.button').style.display = 'none';
     document.querySelectorAll('.sorting.button').forEach(el => el.style.display = 'block');
     document.querySelectorAll('.sort.text').forEach(el => el.style.display = 'block');
+    document.querySelectorAll('.wlcm').forEach(el => el.style.display = 'none');
     display();
   });
 }
@@ -477,6 +478,8 @@ function result(imageNum = 100) {
   document.querySelectorAll('.sort.text').forEach(el => el.style.display = 'none');
   document.querySelector('.options').style.display = 'none';
   document.querySelector('.info').style.display = 'none';
+  document.querySelector('.results').style.margin = '2em auto';
+  document.querySelector('.results').style.padding = '50px';
 
   const timeStr = `Sorter ini diselesaikan pada ${new Date(timestamp + timeTaken).toString()} dan membutuhkan ${msToReadableTime(timeTaken)}. <br><br> <a class="restart-button" href="${location.protocol}//${sorterURL}">Start a New Sorter</a>`;
   const imgRes = (char, num) => {

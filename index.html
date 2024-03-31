@@ -7,7 +7,7 @@
   <meta name="og:site_name" content="Viva & Brutal Sorter">
   <meta name="og:description" content="Web singkat untuk menyortir characther di Viva & Brutal">
   <meta name="og:image" content="src/assets/MIW.png">
-  <title>Viva & Brutal Sorter</title>
+  <title>Minecraft Roleplay Sorter</title>
 
   <link rel="stylesheet" type="text/css" href="src/css/reset.css">
   <link rel="stylesheet" type="text/css" href="src/css/styles.css">
@@ -20,83 +20,108 @@
   <script src="src/js/lz-string.min.js"></script>
   <script src="src/js/seedrandom.min.js"></script>
   <script src="src/js/main.js"></script>
+  <script src="src/js/extra.js"></script>
 </head>
 
 <body>
 <div class="menu">
-    <p><a href="index.html">Youtube Roleplay Sorter</a></p>
+    <p><a href="index.html">Minecraft Roleplay Sorter</a></p>
+</div>
+
+<div class="popup" id="popup-1">
+    <div class="overlay"></div>
+    <div class="content">
+        <div class="close-btn" onclick="togglePopup()">&times;</div>
+        <br>
+        <p class="p1">About</h1>
+        <p class="p2">This website was developed by <span class="penting">Oksigen Yasukawa</span>
+        <br><br>Originally inspired by <a href="http://mainyan.sakura.ne.jp/thsort.html" target="_blank">this site</a>.
+        <br><br>  </p>  
+    </div>      
 </div>
 
 <div class="container">
 
-    <div class="progress">
-        <span class="progressbattle"></span>
-        <div class="progressbar">
-            <div class="progressfill"><span class="progresstext"></span></div>
+    <div class="wlcm">
+        <p class="p1">Welcome to MCRP Sorter!</p>    
+        <p class="p2">A fanmade website to sort/rank your favorite MCRP Character</p>    
+    </div>
+
+    <div class="isi">
+        
+        <div class="progress">
+            <span class="progressbattle"></span>
+            <div class="progressbar">
+                <div class="progressfill"><span class="progresstext"></span></div>
+            </div>
         </div>
+    
+        <div class="sorter">
+            <img src="src/assets/MIW.png" class="left sort image cover">
+    
+            <div class="starting start button">Start Sorting!</div>
+            <div class="starting load button">Load <span></span></div>
+    
+            <div class="loading button"><div></div><span>Loading...</span></div>
+    
+            <div class="sorting tie button">Tie!</div>
+            <div class="sorting undo button">Undo</div>
+            <div class="sorting save button">Save Progress</div>
+    
+            <div class="finished save button">Generate Result URL</div>
+            <div class="finished getimg button">Generate Image</div>
+            <div class="finished list button">Generate Text List</div>
+    
+            <img src="src/assets/MIW.png" class="right sort image cover">
+    
+            <div class="left sort text"><p></p></div>
+            <div class="right sort text"><p></p></div>
+        </div>
+    
+        <div class="options"></div>
+        <div class="image selector"> </div>
+        <div class="time taken"></div>
     </div>
 
-    <div class="sorter">
-        <img src="src/assets/MIW.png" class="left sort image cover">
-
-        <div class="starting start button">Start Sorting!</div>
-        <div class="starting load button">Load <span></span></div>
-
-        <div class="loading button"><div></div><span>Loading...</span></div>
-
-        <div class="sorting tie button">Tie</div>
-        <div class="sorting undo button">Undo</div>
-        <div class="sorting save button">Save Progress</div>
-
-        <div class="finished save button">Generate Result URL</div>
-        <div class="finished getimg button">Generate Image</div>
-        <div class="finished list button">Generate Text List</div>
-
-        <img src="src/assets/MIW.png" class="right sort image cover">
-
-        <div class="left sort text"><p></p></div>
-        <div class="right sort text"><p></p></div>
-    </div>
-
-    <div class="options"></div>
-    <div class="image selector"> </div>
-    <div class="time taken"></div>
 
     
     <div class="info">
         <a class="clearsave">Clear Save Data</a>
-        <!--
-            <a href="https://github.com/simpelplant/charasort-bluearchive" target="_blank">Source Code</a> | <a href="https://github.com/execfera/charasort/" target="_blank">Based on this project</a> | 
-        <br><br>
-
-        <p>Sorter for <a href="https://en.wikipedia.org/wiki/Blue_Archive" target="_blank">Blue Archive</a> characters. Pick your sources, and hit the Start button.</p>
-        <p><strong>Certain options have details that you can hover to read.</strong></p>
-        <p>Click on the character you like better from the two, or tie them if you like them equally or don't know them.</p>
-        <p>Depending on how many sources you pick, you'll get up to 700+ picks, so set aside a good few cups of tea for this.</p>
-
-        <br>
-		
-        <p><b>Keyboard controls during sorting:</b></p>
-        <p><b>H (pick left) | J (undo) | K (tie) | L (pick right) | S (save progress)</b></p>
-        <br>
-        
-        <p><b>Before sorting:</b></p>
-        <p><b>S/Enter (start sorting) | L (load progress)</b></p>
-        <p>1/2/3 always correspond to the first/second/third buttons.</p>
-        <br>
-        
-         <p><b>Latest Changes:</b></p>
-         <p>
-			No longer JP-only: Miyoshi Takane, Aramaki Yakumo
-			Newly added NPC: Motomiya Chiaki, Yume<br>
-         </p>
-        
-		<hr style="width:61%">
-    <p>Originally inspired by <a href="http://mainyan.sakura.ne.jp/thsort.html" target="_blank">this site</a> | <a href="https://bluearchive.nexon.com/home" target="_blank">Blue Archive</a> by <a href="https://en.wikipedia.org/wiki/Nexon" target="_blank">Nexon</a>-->
     </div>
 </div>
 
 <div class="results"></div>
+    
+<div class="footer">
+    <a href="https://github.com/OksigenYasukawa/ytrp-sorter" target="_blank">Source Code  |</a> <a href="https://github.com/execfera/charasort/" target="_blank">Based on this project |</a> <button class="open-btn" onclick="togglePopup()">About</button>
+    <br><br>
+
+    <!--
+    <p>Sorter for <a href="https://en.wikipedia.org/wiki/Blue_Archive" target="_blank">Blue Archive</a> characters. Pick your sources, and hit the Start button.</p>
+    <p><strong>Certain options have details that you can hover to read.</strong></p>
+    <p>Click on the character you like better from the two, or tie them if you like them equally or don't know them.</p>
+    <p>Depending on how many sources you pick, you'll get up to 700+ picks, so set aside a good few cups of tea for this.</p>
+
+    <br>
+
+    <p><b>Keyboard controls during sorting:</b></p>
+    <p><b>H (pick left) | J (undo) | K (tie) | L (pick right) | S (save progress)</b></p>
+    <br>
+
+    <p><b>Before sorting:</b></p>
+    <p><b>S/Enter (start sorting) | L (load progress)</b></p>
+    <p>1/2/3 always correspond to the first/second/third buttons.</p>
+    <br>
+
+    
+    <p>
+        No longer JP-only: Miyoshi Takane, Aramaki Yakumo
+        Newly added NPC: Motomiya Chiaki, Yume<br>
+    </p>
+
+    <hr style="width:61%">
+    <p>Originally inspired by <a href="http://mainyan.sakura.ne.jp/thsort.html" target="_blank">this site</a> | <a href="https://bluearchive.nexon.com/home" target="_blank">Blue Archive</a> by <a href="https://en.wikipedia.org/wiki/Nexon" target="_blank">Nexon</a>-->
+    </div>
 </body>
 
 </html>

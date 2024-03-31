@@ -6,8 +6,8 @@ dataSet[dataSetVersion].options = [
     name: "Series",
     key: "series",
     checked: false,
-    sub: [/*
-      { name: "Brutal Legends", key: "BL" },
+    sub: [
+      { name: "Brutal Legends", key: "BL" },/*
       { name: "Viva Fantasy", key: "VF" },*/
     ]
   },/*
