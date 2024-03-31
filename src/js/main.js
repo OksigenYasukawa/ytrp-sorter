@@ -121,7 +121,7 @@ function init() {
 
   /** Show load button if save data exists. */
   if (storedSaveType) {
-    document.querySelector('.starting.load.button > span').insertAdjacentText('beforeend', storedSaveType);
+    document.querySelector('.starting.load.button .tulisan > span').insertAdjacentText('beforeend', storedSaveType);
     document.querySelectorAll('.starting.button').forEach(el => {
       el.style['grid-row'] = 'span 3';
       el.style.display = 'block';
@@ -262,14 +262,14 @@ function start() {
   document.querySelectorAll('.starting.button').forEach(el => el.style.display = 'none');
   document.querySelector('.loading.button').style.display = 'block';
   document.querySelector('.progress').style.display = 'block';
+  document.querySelectorAll('.wlcm').forEach(el => el.style.display = 'none');
   loading = true;
 
   preloadImages().then(() => {
     loading = false;
     document.querySelector('.loading.button').style.display = 'none';
-    document.querySelectorAll('.sorting.button').forEach(el => el.style.display = 'block');
+    document.querySelectorAll('.sorting.button').forEach(el => el.style.display = 'flex');
     document.querySelectorAll('.sort.text').forEach(el => el.style.display = 'block');
-    document.querySelectorAll('.wlcm').forEach(el => el.style.display = 'none');
     display();
   });
 }
@@ -481,7 +481,7 @@ function result(imageNum = 100) {
   document.querySelector('.results').style.margin = '2em auto';
   document.querySelector('.results').style.padding = '50px';
 
-  const timeStr = `Sorter ini diselesaikan pada ${new Date(timestamp + timeTaken).toString()} dan membutuhkan ${msToReadableTime(timeTaken)}. <br><br> <a class="restart-button" href="${location.protocol}//${sorterURL}">Start a New Sorter</a>`;
+  const timeStr = `<br><p>Sorter ini diselesaikan pada ${new Date(timestamp + timeTaken).toString()} dan membutuhkan ${msToReadableTime(timeTaken)}.</p><br> <a class="restart-button" href="${location.protocol}//${sorterURL}">Start a New Sorter</a>`;
   const imgRes = (char, num) => {
     const charName = reduceTextWidth(char.name, 'Arial 12px', 160);
     const charTooltip = char.name !== charName ? char.name : '';
@@ -666,7 +666,7 @@ function populateOptions() {
       opt.sub.forEach((subopt, subindex) => {
         optList.insertAdjacentHTML('beforeend', optInsert(subopt.name, `${opt.key}-${subindex}`, subopt.tooltip, subopt.checked, opt.checked === false));
       });
-      optList.insertAdjacentHTML('beforeend', '<hr>');
+      optList.insertAdjacentHTML('beforeend', '');
 
       const groupbox = document.getElementById(`cbgroup-${opt.key}`);
 

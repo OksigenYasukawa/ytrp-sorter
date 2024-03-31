@@ -20,4 +20,4 @@ let dataSetVersion = '';
 /**
  * Image root, will be appended to the start of every image URL.
  */
-const imageRoot = 'http://127.0.0.1:5500//chara/';
+const imageRoot = 'http://127.0.0.1:5500/chara/';
