@@ -2,7 +2,7 @@
 @import url('https://cdn-uicons.flaticon.com/2.2.0/uicons-solid-straight/css/uicons-solid-straight.css');
 
 
-@media all and (min-width: 600px) {
+@media only screen and (min-width: 600px) {
   /* .results {
     max-height: calc(5 * (175px + 2px) + 1 * (15px + 2px));
     /* 2px for borders */
