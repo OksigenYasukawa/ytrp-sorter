@@ -733,7 +733,7 @@ hr{
   text-align: center;
   padding: 20px;
   box-sizing: border-box;
-  border-radius: 5px;
+  border-radius: 20px;
   transform: translate(-50%, -50%) scale(1);
   opacity: 0;  
   animation: fadeOut 300ms ease-in; 
