@@ -85,7 +85,6 @@
   }
   .info {    
     padding: 20px 0;
-    font-size: 0.6875em;
   }
   .ujung {    
     padding: 10px;
@@ -222,7 +221,7 @@
     width: 100%;
   }
   .footer a {    
-    font-size: 10px;
+    font-size: 30px;
   }/*
   .sorting.button {    
     /*padding: 40px 30px;
@@ -756,7 +755,6 @@ label {
 .footer {  
   display: block;
   text-align: center;
-  font-size: 0.6875em;
   width: 100%;
   line-height: 1.2em;
   margin-top: 10px;
