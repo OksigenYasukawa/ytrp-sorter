@@ -127,7 +127,7 @@
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    background-color: red
+    background-color: red;
   }
   .sorter {   
     width: min-content;
