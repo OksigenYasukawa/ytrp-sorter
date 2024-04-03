@@ -1035,3 +1035,7 @@ hr{
   align-items: center;
   height: 100%;
 }
+
+.ketikan {
+  display: none;
+}
