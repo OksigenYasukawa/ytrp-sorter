@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&display=swap');
 
 
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 1001px) {
   /* .results {
     max-height: calc(5 * (175px + 2px) + 1 * (15px + 2px));
     /* 2px for borders */
@@ -108,7 +108,7 @@
 /* 
     margin: 0px 300px; */
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 1000px) {
   body {    
     overflow: hidden;
     font-size: 10px;
