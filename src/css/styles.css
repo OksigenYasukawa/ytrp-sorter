@@ -231,9 +231,6 @@
   .options > label {
     font-size:10px !important;
   }
-  .options div label {
-    font-size: 15px !important;
-  }
   .options > div {
     padding: 30px;
     font-size: 30px;
