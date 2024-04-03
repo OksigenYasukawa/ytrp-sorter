@@ -136,6 +136,9 @@
   .progressfill {
     height:20px;
   }
+  .restart-button:link, .restart-button:visited {
+   padding: 20px 10px;
+  }
 }
 
 /* 
@@ -330,6 +333,9 @@
   
   .progressfill {
     height:40px;
+  }
+  .restart-button:link, .restart-button:visited {
+   padding: 40px 10px;
   }
 }
 
@@ -789,7 +795,6 @@ a:visited {
 .restart-button:link, .restart-button:visited {
     background-color: #ff961d;
     color: #ffffff;
-    padding: 20px 10px;
     border-radius: 30px;
     /* border: 1px solid #80C1E3; */
     display: inline-block;
