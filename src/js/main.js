@@ -581,12 +581,13 @@ function progressBar(indicator, percentage) {
  * @param {number} [imageNum=3] Number of images to display. Defaults to 3.
  */
 function result(imageNum = 100) {
-  document.querySelectorAll('.finished.button.verdek').forEach(el => el.style.display = 'block');
+  document.querySelectorAll('.finished.button.verdek').forEach(el => el.style.display = 'none');
   document.querySelectorAll('.finished.button.vermob').forEach(el => el.style.display = 'none');
   document.querySelectorAll('.left.sort.image').forEach(el => el.style.display = 'none');
   document.querySelectorAll('.right.sort.image').forEach(el => el.style.display = 'none');
   document.querySelector('.image.selector').style.display = 'block';
   document.querySelector('.image.selector').style.display = 'block';
+  //document.querySelector('.time.taken').style.display = 'block';
   
   document.querySelectorAll('.sorting.button').forEach(el => el.style.display = 'none');
   document.querySelectorAll('.sort.text').forEach(el => el.style.display = 'none');
