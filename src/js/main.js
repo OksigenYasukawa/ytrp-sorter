@@ -588,6 +588,7 @@ function result(imageNum = 100) {
   document.querySelector('.image.selector').style.display = 'block';
   document.querySelector('.image.selector').style.display = 'block';
   //document.querySelector('.time.taken').style.display = 'block';
+  document.querySelector('.startnew').style.display = 'block';
   
   document.querySelectorAll('.sorting.button').forEach(el => el.style.display = 'none');
   document.querySelectorAll('.sort.text').forEach(el => el.style.display = 'none');
@@ -595,7 +596,9 @@ function result(imageNum = 100) {
   document.querySelector('.info').style.display = 'none';
   document.querySelector('.results').style.margin = '2em auto';
 
-  const timeStr = `<br><p>Sorter ini diselesaikan pada ${new Date(timestamp + timeTaken).toString()} dan membutuhkan ${msToReadableTime(timeTaken)}.</p><br> <a class="restart-button" href="${location.protocol}//${sorterURL}">Start a New Sorter</a>`;
+  //<br><p>Sorter ini diselesaikan pada ${new Date(timestamp + timeTaken).toString()} dan membutuhkan ${msToReadableTime(timeTaken)}.</p><br> */
+
+  const NewStr = `<a class="restart-button" href="${location.protocol}//${sorterURL}">Start a New Sorter</a>`;
   const imgRes = (char, num) => {
     const charName = reduceTextWidth(char.name, 'Arial 12px', 160);
     const charTooltip = char.name !== charName ? char.name : '';
@@ -613,9 +616,9 @@ function result(imageNum = 100) {
 
   const finalSortedIndexes = sortedIndexList[0].slice(0);
   const resultTable = document.querySelector('.results');
-  const timeElem = document.querySelector('.time.taken');
+  const NewElem = document.querySelector('.startnew');
 
-  timeElem.innerHTML = timeStr;
+  NewElem.innerHTML = NewStr;
 
   characterDataToSort.forEach((val, idx) => {
     const characterIndex = finalSortedIndexes[idx];
