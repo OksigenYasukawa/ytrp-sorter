@@ -334,6 +334,10 @@
    padding: 40px 10px;
    font-size: 30px;
   }
+  
+  .info a {
+    font-size: 30px;
+  }
 }
 
 :root {
