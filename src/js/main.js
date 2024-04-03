@@ -324,6 +324,9 @@ function start() {
     document.querySelectorAll('.sort.vermob').forEach(el => {
       el.style.margin = '0 0 10px 0';
     });
+    document.querySelectorAll('.sorting.button.vermob').forEach(el => {
+      el.style.padding = '10%';
+    });
     display();
   });
 }
