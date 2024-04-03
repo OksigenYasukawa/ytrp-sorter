@@ -585,7 +585,6 @@ function result(imageNum = 100) {
   document.querySelectorAll('.right.sort.image').forEach(el => el.style.display = 'none');
   document.querySelector('.image.selector').style.display = 'block';
   document.querySelector('.image.selector').style.display = 'block';
-  document.querySelector('.time.taken').style.display = 'none';
   
   document.querySelectorAll('.sorting.button').forEach(el => el.style.display = 'none');
   document.querySelectorAll('.sort.text').forEach(el => el.style.display = 'none');
