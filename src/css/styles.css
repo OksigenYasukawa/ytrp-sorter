@@ -343,7 +343,7 @@
     font-size: 30px;
   }
   .time.taken p {
-    margin-bottom: 20px;
+    margin-bottom: 20px !important;
   }
 }
 
