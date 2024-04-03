@@ -325,7 +325,7 @@ function start() {
       el.style.margin = '0 0 10px 0';
     });
     document.querySelectorAll('.sorting.button.vermob').forEach(el => {
-      el.style.padding = '40px 20px';
+      el.style.padding = '40px 20px !important';
     });
     display();
   });
