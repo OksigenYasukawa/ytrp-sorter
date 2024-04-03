@@ -96,7 +96,7 @@
 /* 
     margin: 0px 300px; */
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 999px) {
   body {    
     overflow: hidden;
     font-size: 10px;
