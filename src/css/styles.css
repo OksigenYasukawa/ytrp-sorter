@@ -156,15 +156,14 @@
   }
   .result {    
     width: 40%;
-  }
+  }/*
   .wlcm .p1 {
     font-size: medium !important;
-  }
+  }*/
   .wlcm .p2 {
     font-size: smaller !important;
   }
   .menu a {    
-    font-size: 30px !important;
     font-weight: normal;
   }
   .menu {
@@ -779,7 +778,6 @@ label {
 a {
   text-decoration: none;
   cursor: pointer;
-  font-size: 15px;
   font-weight: bold;
 }
 
