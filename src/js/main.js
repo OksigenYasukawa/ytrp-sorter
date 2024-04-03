@@ -175,7 +175,7 @@ function init() {
       el.style.display = 'flex';
     });
     document.querySelectorAll('.sort.vermob').forEach(el => {
-      el.style.margin = '0 0 20px 0';
+      el.style.margin = '0 0 30px 0';
     });
   }
 
