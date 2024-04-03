@@ -345,6 +345,7 @@ function start() {
   rightInnerIndex = 0;                        // to the right array, in order to merge them into one sorted array.
 
   /** Disable all checkboxes and hide/show appropriate parts while we preload the images. */
+  
   document.querySelectorAll('input[type=checkbox]').forEach(cb => cb.disabled = true);
   document.querySelectorAll('.starting.button').forEach(el => el.style.display = 'none');
   document.querySelectorAll('.loading.button').forEach(el => {
@@ -589,6 +590,7 @@ function result(imageNum = 100) {
   document.querySelector('.image.selector').style.display = 'block';
   //document.querySelector('.time.taken').style.display = 'block';
   document.querySelector('.startnew').style.display = 'block';
+  document.querySelector('.ketikan').style.display = 'block';
   
   document.querySelectorAll('.sorting.button').forEach(el => el.style.display = 'none');
   document.querySelectorAll('.sort.text').forEach(el => el.style.display = 'none');
