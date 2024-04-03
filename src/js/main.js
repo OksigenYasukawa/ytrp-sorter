@@ -57,19 +57,63 @@ let storedSaveType  = localStorage.getItem(`${sorterURL}_saveType`);
 function init() {
 
   /** Define button behavior. */
-  document.querySelector('.starting.start.button').addEventListener('click', start);
-  document.querySelector('.starting.load.button').addEventListener('click', loadProgress);
+  let startButtons = document.querySelectorAll('.starting.start.button');
+  let loadButtons = document.querySelectorAll('.starting.load.button');
 
-  document.querySelector('.left.sort.image').addEventListener('click', () => pick('left'));
-  document.querySelector('.right.sort.image').addEventListener('click', () => pick('right'));
+  startButtons.forEach((button) => {
+    button.addEventListener('click', start);
+  });
+
+  loadButtons.forEach((button) => {
+    button.addEventListener('click', loadProgress);
+  });
+
+  let leftImages = document.querySelectorAll('.left.sort.image');
+  let rightImages = document.querySelectorAll('.right.sort.image');
+
+  leftImages.forEach((image) => {
+    image.addEventListener('click', () => pick('left'));
+  });
+
+  rightImages.forEach((image) => {
+    image.addEventListener('click', () => pick('right'));
+  });
   
-  document.querySelector('.sorting.tie.button').addEventListener('click', () => pick('tie'));
-  document.querySelector('.sorting.undo.button').addEventListener('click', undo);
-  document.querySelector('.sorting.save.button').addEventListener('click', () => saveProgress('Progress'));
+  let tieButtons = document.querySelectorAll('.sorting.tie.button');
+  let undoButtons = document.querySelectorAll('.sorting.undo.button');
+  let saveButtons = document.querySelectorAll('.sorting.save.button');
+
+  tieButtons.forEach((button) => {
+    button.addEventListener('click', () => pick('tie'));
+  });
+
+  undoButtons.forEach((button) => {
+    button.addEventListener('click', undo);
+  });
+
+  saveButtons.forEach((button) => {
+    button.addEventListener('click', () => saveProgress('Progress'));
+  });
   
-  document.querySelector('.finished.save.button').addEventListener('click', () => saveProgress('Last Result'));
+  /*document.querySelector('.finished.save.button').addEventListener('click', () => saveProgress('Last Result'));
   document.querySelector('.finished.getimg.button').addEventListener('click', generateImage);
-  document.querySelector('.finished.list.button').addEventListener('click', generateTextList);
+  document.querySelector('.finished.list.button').addEventListener('click', generateTextList);*/
+
+  let saveProgress = document.querySelectorAll('.finished.save.button');
+  let getImgButtons = document.querySelectorAll('.finished.getimg.button');
+  let listButtons = document.querySelectorAll('.finished.list.button');
+
+  saveProgress.forEach((button) => {
+    button.addEventListener('click', () => saveProgress('Last Result'));
+  });
+
+  getImgButtons.forEach((button) => {
+    button.addEventListener('click', generateImage);
+  });
+
+  listButtons.forEach((button) => {
+    button.addEventListener('click', generateTextList);
+  });
 
   document.querySelector('.clearsave').addEventListener('click', clearProgress);
 
@@ -122,9 +166,16 @@ function init() {
   /** Show load button if save data exists. */
   if (storedSaveType) {
     document.querySelector('.starting.load.button .tulisan > span').insertAdjacentText('beforeend', storedSaveType);
-    document.querySelectorAll('.starting.button').forEach(el => {
+    document.querySelectorAll('.starting.button.verdek').forEach(el => {
       el.style['grid-row'] = 'span 3';
       el.style.display = 'block';
+    });
+    document.querySelectorAll('.starting.button.vermob').forEach(el => {
+      el.style['grid-row'] = 'span 3';
+      el.style.display = 'flex';
+    });
+    document.querySelectorAll('.sort.vermob').forEach(el => {
+      el.style.margin = '0 0 20px 0';
     });
   }
 
@@ -270,6 +321,9 @@ function start() {
     document.querySelector('.loading.button').style.display = 'none';
     document.querySelectorAll('.sorting.button').forEach(el => el.style.display = 'flex');
     document.querySelectorAll('.sort.text').forEach(el => el.style.display = 'block');
+    document.querySelectorAll('.sort.vermob').forEach(el => {
+      el.style.margin = '0 0 10px 0';
+    });
     display();
   });
 }
@@ -290,13 +344,27 @@ function display() {
 
   progressBar(`Battle No. ${battleNo}`, percent);
 
-  document.querySelector('.left.sort.image').src = leftChar.img;
-  document.querySelector('.right.sort.image').src = rightChar.img;
-
+  let leftImages = document.querySelectorAll('.left.sort.image');
+  let rightImages = document.querySelectorAll('.right.sort.image');
   
+  leftImages.forEach((image) => {
+    image.src = leftChar.img;
+  });
+  
+  rightImages.forEach((image) => {
+    image.src = rightChar.img;
+  }); 
 
-  document.querySelector('.left.sort.text').innerHTML = charNameDisp(leftChar.name);
-  document.querySelector('.right.sort.text').innerHTML = charNameDisp(rightChar.name);
+  let leftTexts = document.querySelectorAll('.left.sort.text');
+  let rightTexts = document.querySelectorAll('.right.sort.text');
+
+  leftTexts.forEach((text) => {
+    text.innerHTML = charNameDisp(leftChar.name);
+  });
+
+  rightTexts.forEach((text) => {
+    text.innerHTML = charNameDisp(rightChar.name);
+  });
 
   /** Autopick if choice has been given. */
   if (choices.length !== battleNo - 1) {
@@ -470,7 +538,11 @@ function progressBar(indicator, percentage) {
  * @param {number} [imageNum=3] Number of images to display. Defaults to 3.
  */
 function result(imageNum = 100) {
-  document.querySelectorAll('.finished.button').forEach(el => el.style.display = 'block');
+  document.querySelectorAll('.finished.button.verdek').forEach(el => el.style.display = 'block');
+  document.querySelectorAll('.finished.button.vermob').forEach(el => el.style.display = 'none');
+  document.querySelectorAll('.left.sort.image').forEach(el => el.style.display = 'none');
+  document.querySelectorAll('.right.sort.image').forEach(el => el.style.display = 'none');
+  document.querySelector('.image.selector').style.display = 'block';
   document.querySelector('.image.selector').style.display = 'block';
   document.querySelector('.time.taken').style.display = 'block';
   
@@ -479,7 +551,6 @@ function result(imageNum = 100) {
   document.querySelector('.options').style.display = 'none';
   document.querySelector('.info').style.display = 'none';
   document.querySelector('.results').style.margin = '2em auto';
-  document.querySelector('.results').style.padding = '50px';
 
   const timeStr = `<br><p>Sorter ini diselesaikan pada ${new Date(timestamp + timeTaken).toString()} dan membutuhkan ${msToReadableTime(timeTaken)}.</p><br> <a class="restart-button" href="${location.protocol}//${sorterURL}">Start a New Sorter</a>`;
   const imgRes = (char, num) => {
