@@ -322,7 +322,7 @@ function start() {
     document.querySelectorAll('.sorting.button').forEach(el => el.style.display = 'flex');
     document.querySelectorAll('.sort.text').forEach(el => el.style.display = 'block');
     document.querySelectorAll('.sort.vermob').forEach(el => {
-      el.style.margin = '0 0 10px 0';
+      el.style.margin = '0 0 30px 0';
     });
     document.querySelectorAll('.sorting.button.vermob').forEach(el => {
       el.style.padding = '100px 20px !important';
