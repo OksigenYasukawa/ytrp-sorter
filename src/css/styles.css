@@ -185,6 +185,12 @@
     padding: 15px;
     font-size: 40px !important;
   }
+  .right span:not(nomor) {
+    font-weight:bold;
+    color:black;
+    text-align:center;
+    font-size: 15px !important;
+  }
 }
 
 :root {
@@ -588,7 +594,7 @@ label {
   font-weight:bold;
   color:black;
   text-align:center;
-  font-size: 15px;
+  font-size: 15px !important;
 }
 
 .right .nomor {
