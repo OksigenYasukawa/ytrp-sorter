@@ -286,10 +286,11 @@ function start() {
   }
 
   /** Shuffle character array with timestamp seed. */
-  timestamp = timestamp || new Date().getTime();
+  let timestamp = timestamp || new Date().getTime();
+  let currentVersion = new Date().toLocaleString("id-ID"); // Ubah ke format tanggal bahasa Indonesia
   if (new Date(timestamp) < new Date(currentVersion)) { timeError = true; }
   Math.seedrandom(timestamp);
-
+  
   characterDataToSort = characterDataToSort
     .map(a => [Math.random(), a])
     .sort((a,b) => a[0] - b[0])
