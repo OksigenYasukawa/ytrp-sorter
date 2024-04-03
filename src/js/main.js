@@ -347,14 +347,16 @@ function start() {
   /** Disable all checkboxes and hide/show appropriate parts while we preload the images. */
   document.querySelectorAll('input[type=checkbox]').forEach(cb => cb.disabled = true);
   document.querySelectorAll('.starting.button').forEach(el => el.style.display = 'none');
-  document.querySelector('.loading.button').style.display = 'block';
+  document.querySelector('.loading.button.verdek').style.display = 'block';
+  document.querySelector('.loading.button.vermob').style.display = 'flex';
   document.querySelector('.progress').style.display = 'block';
   document.querySelectorAll('.wlcm').forEach(el => el.style.display = 'none');
   loading = true;
 
   preloadImages().then(() => {
     loading = false;
-    document.querySelector('.loading.button').style.display = 'none';
+    document.querySelector('.loading.verdek').style.display = 'none';
+    document.querySelector('.loading.vermob').style.display = 'none';
     document.querySelectorAll('.sorting.button').forEach(el => el.style.display = 'flex');
     document.querySelectorAll('.sort.text').forEach(el => el.style.display = 'block');
     document.querySelectorAll('.sort.vermob').forEach(el => {
@@ -583,7 +585,7 @@ function result(imageNum = 100) {
   document.querySelectorAll('.right.sort.image').forEach(el => el.style.display = 'none');
   document.querySelector('.image.selector').style.display = 'block';
   document.querySelector('.image.selector').style.display = 'block';
-  document.querySelector('.time.taken').style.display = 'block';
+  document.querySelector('.time.taken').style.display = 'none';
   
   document.querySelectorAll('.sorting.button').forEach(el => el.style.display = 'none');
   document.querySelectorAll('.sort.text').forEach(el => el.style.display = 'none');
