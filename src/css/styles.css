@@ -431,6 +431,11 @@ body.dark{
   text-align: center;
 }
 
+.results .p1 {  
+  font-size: xx-large;
+  font-weight: 600;
+}
+
 .wlcm .p1 {
   font-size: xx-large;
   font-weight: 600;
