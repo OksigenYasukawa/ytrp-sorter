@@ -129,6 +129,13 @@
       margin-left: 10%;
       border-radius:5px;
   }
+  .progresstext {
+    height:20px;
+  }
+  
+  .progressfill {
+    height:20px;
+  }
 }
 
 /* 
@@ -187,7 +194,7 @@
   .sorter > .text {
     width: 150px;
     margin-bottom: 20px;
-    font-size: 15px;
+    font-size: 45px;
   }
   .loading.button {    
     display: none;
@@ -214,7 +221,7 @@
     font-size: 10px;
   }
   .sorting.button {    
-    padding: 20px 30px;
+    padding: 40px 30px;
     font-size: 45px;
   }
   .options > label {
@@ -290,7 +297,7 @@
     margin-left: 0px;
   }
   .progress {    
-    font-size: 15px;
+    font-size: 45px;
   }
   .time.taken {    
     width: 100%;
@@ -316,6 +323,13 @@
     /* float: left; */
     align-content: flex-start;
     flex-direction: row;
+  }
+  .progresstext {
+    height:40px;
+  }
+  
+  .progressfill {
+    height:40px;
   }
 }
 
@@ -442,19 +456,16 @@ body.dark{
   width: 100%;
   text-align: center;
   font-size: 0.8em;
-  height: 20px;
   color: var(--ireng);
   font-weight: bold;
 }
 
 .progressfill {
-  height: 21px;
   background-color: #f8922c;
   color: white;
   width: 0%;
   border-radius: 2px;
   transition: 0.2s;
-  height:20px;
   overflow: hidden;
   border-radius: 1rem;
 }
