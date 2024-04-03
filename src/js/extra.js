@@ -22,3 +22,8 @@ function togglePopup3(){
     document.getElementById("progresstext").classList.toggle("dark");
     document.getElementById("result").classList.toggle("dark");
 }
+
+function togglePopup4(){
+    document.getElementById("popup-4").classList.toggle("active");
+}
+
