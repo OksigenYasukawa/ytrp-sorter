@@ -9,7 +9,7 @@
     /* 2px for borders */
     
   body {    
-    font-size: 16px;
+    font-size: 5px;
   }
   .menu {
     padding: 35px;
@@ -21,6 +21,7 @@
   }
   .container {    
     width: var(--wi);
+    background-color: #000000;
   }
   .sorter {    
     width: 900px;
