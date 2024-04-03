@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://cdn-uicons.flaticon.com/2.2.0/uicons-solid-straight/css/uicons-solid-straight.css');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap')
 
 
 @media only screen and (min-width: 1001px) {
@@ -15,7 +16,7 @@
   }
   .menu {
     padding: 35px;
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Tilt Warp", sans-serif;
   }
   .menu a {    
     font-size: 45px !important;
@@ -172,7 +173,7 @@
   }
   .menu {
     padding:25px;
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Tilt Warp", sans-serif;
     font-size: 75px !important;
   }
   .container {  
