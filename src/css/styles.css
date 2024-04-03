@@ -169,6 +169,7 @@
   .menu {
     padding:10px;
     font-family: "Bebas Neue", sans-serif;
+    font-size: 45px !important;
   }
   .container {  
     width: 100%;
