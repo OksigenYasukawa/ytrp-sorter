@@ -101,7 +101,7 @@ dataSet[dataSetVersion].characterData = [
     opts: {
       series: ["BL"]
     }
-},/*
+},
 {
     name: "Damon",
     img: "damon.png",
