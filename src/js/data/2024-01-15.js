@@ -5,9 +5,10 @@ dataSet[dataSetVersion].options = [
   {
     name: "Series",
     key: "series",
-    checked: false,
+    checked: true,
     sub: [
-      { name: "Brutal Legends", key: "BL" },/*
+      { name: "Brutal Legends", key: "BL" },
+      { name: "Brutal Hardcore II", key: "BHC2" },/*
       { name: "Viva Fantasy", key: "VF" },*/
     ]
   },/*
@@ -401,6 +402,240 @@ dataSet[dataSetVersion].characterData = [
     img: "zanny.png",
     opts: {
       series: ["BL"]
+    }
+},
+
+//BRUTAL HARDCORE II//
+
+{
+    name: "Aizu",
+    img: "bhc2/Aizu.png",
+    opts: {
+        series: ["BHC2"]
+    }
+},
+{
+    name: "Anoy",
+    img: "bhc2/Anoy.png",
+    opts: {
+        series: ["BHC2"]
+    }
+},
+{
+    name: "Aw",
+    img: "bhc2/Aw.png",
+    opts: {
+        series: ["BHC2"]
+    }
+},
+{
+    name: "Cito",
+    img: "bhc2/Cito.png",
+    opts: {
+        series: ["BHC2"]
+    }
+},
+{
+    name: "Daboy",
+    img: "bhc2/Daboy.png",
+    opts: {
+        series: ["BHC2"]
+    }
+},
+{
+    name: "Davinci",
+    img: "bhc2/Davinci.png",
+    opts: {
+        series: ["BHC2"]
+    }
+},
+{
+    name: "Draco",
+    img: "bhc2/Draco.png",
+    opts: {
+        series: ["BHC2"]
+    }
+},
+{
+    name: "Ebi",
+    img: "bhc2/Ebi.png",
+    opts: {
+        series: ["BHC2"]
+    }
+},
+{
+    name: "Eko",
+    img: "bhc2/Eko.png",
+    opts: {
+        series: ["BHC2"]
+    }
+},
+{
+    name: "Galon",
+    img: "bhc2/Galon.png",
+    opts: {
+        series: ["BHC2"]
+    }
+},
+{
+    name: "Gensep",
+    img: "bhc2/Gensep.png",
+    opts: {
+        series: ["BHC2"]
+    }
+},
+{
+    name: "Han",
+    img: "bhc2/Han.png",
+    opts: {
+        series: ["BHC2"]
+    }
+},
+{
+    name: "Jaya",
+    img: "bhc2/Jaya.png",
+    opts: {
+        series: ["BHC2"]
+    }
+},
+{
+    name: "Jing",
+    img: "bhc2/Jing.png",
+    opts: {
+        series: ["BHC2"]
+    }
+},
+{
+    name: "Jirman",
+    img: "bhc2/Jirman.png",
+    opts: {
+        series: ["BHC2"]
+    }
+},
+{
+    name: "Johar",
+    img: "bhc2/Johar.png",
+    opts: {
+        series: ["BHC2"]
+    }
+},
+{
+    name: "Joni",
+    img: "bhc2/Joni.png",
+    opts: {
+        series: ["BHC2"]
+    }
+},
+{
+    name: "Joy",
+    img: "bhc2/Joy.png",
+    opts: {
+        series: ["BHC2"]
+    }
+},
+{
+    name: "Kagutam",
+    img: "bhc2/Kagutam.png",
+    opts: {
+        series: ["BHC2"]
+    }
+},
+{
+    name: "Kikil",
+    img: "bhc2/Kikil.png",
+    opts: {
+        series: ["BHC2"]
+    }
+},
+{
+    name: "Kiliu",
+    img: "bhc2/Kiliu.png",
+    opts: {
+        series: ["BHC2"]
+    }
+},
+{
+    name: "Leo",
+    img: "bhc2/Leo.png",
+    opts: {
+        series: ["BHC2"]
+    }
+},
+{
+    name: "Maghrib",
+    img: "bhc2/Maghrib.png",
+    opts: {
+        series: ["BHC2"]
+    }
+},
+{
+    name: "Marco",
+    img: "bhc2/Marco.png",
+    opts: {
+        series: ["BHC2"]
+    }
+},
+{
+    name: "Memet",
+    img: "bhc2/Memet.png",
+    opts: {
+        series: ["BHC2"]
+    }
+},
+{
+    name: "PepPay",
+    img: "bhc2/PepPay.png",
+    opts: {
+        series: ["BHC2"]
+    }
+},
+{
+    name: "Reia",
+    img: "bhc2/Reia.png",
+    opts: {
+        series: ["BHC2"]
+    }
+},
+{
+    name: "Serbaw",
+    img: "bhc2/Serbaw.png",
+    opts: {
+        series: ["BHC2"]
+    }
+},
+{
+    name: "Sonic",
+    img: "bhc2/Sonic.png",
+    opts: {
+        series: ["BHC2"]
+    }
+},
+{
+    name: "Sugiono",
+    img: "bhc2/Sugiono.png",
+    opts: {
+        series: ["BHC2"]
+    }
+},
+{
+    name: "Tom",
+    img: "bhc2/Tom.png",
+    opts: {
+        series: ["BHC2"]
+    }
+},
+{
+    name: "Wukong",
+    img: "bhc2/Wukong.png",
+    opts: {
+        series: ["BHC2"]
+    }
+},
+{
+    name: "Yuuki",
+    img: "bhc2/Yuuki.png",
+    opts: {
+        series: ["BHC2"]
     }
 },
 

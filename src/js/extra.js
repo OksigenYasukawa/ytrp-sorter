@@ -8,6 +8,7 @@ function togglePopup2(){
 
 function togglePopup3(){
     document.getElementById("body").classList.toggle("dark");
+    document.getElementById("results").classList.toggle("dark");
     document.getElementById("isi").classList.toggle("dark");
     document.getElementById("wlcm").classList.toggle("dark");
     document.getElementById("info").classList.toggle("dark");
